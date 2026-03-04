@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us — New York Hungarian Scientific Society</title>
+    <link rel="icon" type="image/png" href="images/NYHSSfavicon.png">
+    <link rel="apple-touch-icon" href="images/NYHSSfavicon.png">
+    <meta property="og:title" content="Contact Us — New York Hungarian Scientific Society">
+    <meta property="og:description" content="Get in touch with the New York Hungarian Scientific Society.">
+    <meta property="og:image" content="images/NYHSS_logo.png">
+    <meta property="og:type" content="website">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="images/NYHSS_logo_transparent.png" alt="New York Hungarian Scientific Society" class="logo-img">
+                    </a>
+                </div>
+                <nav class="main-nav">
+                    <ul class="nav-list">
+                        <li><a href="index.html" class="nav-link">Home</a></li>
+                        <li class="dropdown">
+                            <a href="#" class="nav-link">About</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="history.html">Our History</a></li>
+                                <li><a href="people.html">People</a></li>
+                                <li><a href="founding-members.html">Founding Members</a></li>
+                                <li><a href="bylaws.html">Bylaws</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="nav-link">Awards</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="awardees.html">Previous Awardees</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="nav-link">Events</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="events.html">Upcoming Events</a></li>
+                                <li><a href="lectures.html">Past Lectures</a></li>
+                                <li><a href="call-for-abstract.html">Call for Abstract</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="news.html" class="nav-link">News</a></li>
+                        <li class="dropdown">
+                            <a href="#" class="nav-link">Media</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="photos.html">Event Photos</a></li>
+                                <li><a href="videos.html">Videos</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="contact.html" class="nav-link active">Contact</a></li>
+                    </ul>
+                </nav>
+                <button class="mobile-menu-toggle" aria-label="Toggle mobile menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main class="main">
+        <section class="page-header">
+            <div class="container">
+                <h1>Contact Us</h1>
+                <p>Get in touch with the New York Hungarian Scientific Society</p>
+            </div>
+        </section>
+
+        <section class="contact-content">
+            <div class="container">
+                <div class="contact-grid">
+                    <div class="contact-info">
+                        <h2>Get in Touch</h2>
+                        <p>We'd love to hear from you! Whether you're interested in membership, have questions about our events, or want to learn more about our organization, please don't hesitate to reach out.</p>
+                        
+                        <div class="contact-details">
+                            <div class="contact-item">
+                                <div class="contact-icon">📧</div>
+                                <div class="contact-text">
+                                    <h3>Email</h3>
+                                    <p>For questions about membership or subscription to our mailing list:</p>
+                                    <a href="mailto:tudosklub@gmail.com" class="contact-link">tudosklub@gmail.com</a>
+                                </div>
+                            </div>
+
+                            <div class="contact-item">
+                                <div class="contact-icon">📍</div>
+                                <div class="contact-text">
+                                    <h3>Event Location</h3>
+                                    <p>Most of our events are being held at the Consulate General of Hungary:</p>
+                                    <address>
+                                        Consulate General of Hungary<br>
+                                        227 East 52nd Street<br>
+                                        New York, N.Y. 10022
+                                    </address>
+                                </div>
+                            </div>
+
+                            <div class="contact-item">
+                                <div class="contact-icon">📬</div>
+                                <div class="contact-text">
+                                    <h3>Mailing Address</h3>
+                                    <p>For official correspondence:</p>
+                                    <address>
+                                        New York Hungarian Scientific Society<br>
+                                        PO Box 1386 Gracie Station<br>
+                                        New York, NY 10028
+                                    </address>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="contact-form">
+                        <h2>Send us a Message</h2>
+                        <form id="contact-form" class="form">
+                            <div class="form-group">
+                                <label for="name">Name *</label>
+                                <input type="text" id="name" name="name" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="email">Email *</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="subject">Subject</label>
+                                <input type="text" id="subject" name="subject">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="message">Message *</label>
+                                <textarea id="message" name="message" rows="6" required></textarea>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="interest">Area of Interest</label>
+                                <select id="interest" name="interest">
+                                    <option value="">Please select...</option>
+                                    <option value="membership">Membership</option>
+                                    <option value="events">Events</option>
+                                    <option value="collaboration">Collaboration</option>
+                                    <option value="general">General Inquiry</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+
+                            <button type="submit" class="btn btn-primary">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="membership-info">
+                    <h2>Join Our Community</h2>
+                    <div class="membership-grid">
+                        <div class="membership-card">
+                            <div class="membership-icon">🔬</div>
+                            <h3>For Scientists</h3>
+                            <p>Connect with fellow Hungarian researchers in the New York area. Present your work, collaborate on projects, and expand your professional network.</p>
+                        </div>
+
+                        <div class="membership-card">
+                            <div class="membership-icon">🎓</div>
+                            <h3>For Students</h3>
+                            <p>Join a supportive community of Hungarian scholars. Access mentorship, attend lectures, and participate in scientific discussions.</p>
+                        </div>
+
+                        <div class="membership-card">
+                            <div class="membership-icon">🤝</div>
+                            <h3>For Supporters</h3>
+                            <p>Support Hungarian scientific excellence in New York. Attend our events, sponsor our activities, and help us grow our community.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="faq-section">
+                    <h2>Frequently Asked Questions</h2>
+                    <div class="faq-grid">
+                        <div class="faq-item">
+                            <h3>How can I become a member?</h3>
+                            <p>To become a member, simply send us an email at <a href="mailto:tudosklub@gmail.com">tudosklub@gmail.com</a> with your name, professional background, and areas of interest. We'll get back to you with membership information.</p>
+                        </div>
+
+                        <div class="faq-item">
+                            <h3>Are events open to non-members?</h3>
+                            <p>Most of our events are open to the public, though members receive priority registration and discounted admission when applicable. Check our events page for specific event details.</p>
+                        </div>
+
+                        <div class="faq-item">
+                            <h3>What languages are used at events?</h3>
+                            <p>While our community is Hungarian, most events are conducted in English to accommodate our diverse membership and guests. Some social events may include Hungarian language elements.</p>
+                        </div>
+
+                        <div class="faq-item">
+                            <h3>How can I propose a lecture or event?</h3>
+                            <p>We welcome suggestions for lectures and events! Please email us with your proposal, including topic, speaker information, and preferred dates. Our programming committee will review your submission.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <section class="newsletter-section">
+                    <div class="container">
+                        <h2>Subscribe to Our Mailing List</h2>
+                        <p>Stay informed about upcoming events, lectures, and news from the New York Hungarian Scientific Society.</p>
+                        <div id="mc_embed_signup">
+                            <form action="https://nyhungarianscientificsociety.us20.list-manage.com/subscribe/post?u=d0404cec4e9617a37ffdb6e69&amp;id=74266d9ab3&amp;f_id=001621eef0" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank">
+                                <div id="mc_embed_signup_scroll">
+                                    <div class="indicates-required"><span class="asterisk">*</span> indicates required</div>
+                                    <div class="mc-field-group">
+                                        <label for="mce-EMAIL">Email Address <span class="asterisk">*</span></label>
+                                        <input type="email" name="EMAIL" class="required email" id="mce-EMAIL" required="" value="">
+                                    </div>
+                                    <div class="mc-field-group">
+                                        <label for="mce-FNAME">First Name <span class="asterisk">*</span></label>
+                                        <input type="text" name="FNAME" class="required text" id="mce-FNAME" value="" required="">
+                                    </div>
+                                    <div class="mc-field-group">
+                                        <label for="mce-LNAME">Last Name <span class="asterisk">*</span></label>
+                                        <input type="text" name="LNAME" class="required text" id="mce-LNAME" value="" required="">
+                                    </div>
+                                    <div id="mce-responses" class="clear">
+                                        <div class="response" id="mce-error-response" style="display: none;"></div>
+                                        <div class="response" id="mce-success-response" style="display: none;"></div>
+                                    </div>
+                                    <div aria-hidden="true" style="position: absolute; left: -5000px;">
+                                        <input type="text" name="b_d0404cec4e9617a37ffdb6e69_74266d9ab3" tabindex="-1" value="">
+                                    </div>
+                                    <div class="clear">
+                                        <input type="submit" name="subscribe" id="mc-embedded-subscribe" class="button" value="Subscribe">
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>New York Hungarian Scientific Society</h3>
+                    <p>Providing a venue for Hungarian scholars, scientists and students to promote science and culture in the NYC area.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="history.html">Our History</a></li>
+                        <li><a href="people.html">People</a></li>
+                        <li><a href="events.html">Events</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <p><strong>Email:</strong> <a href="mailto:tudosklub@gmail.com">tudosklub@gmail.com</a></p>
+                    <p><strong>Address:</strong> 227 East 52nd Street, New York, N.Y. 10022</p>
+                    <p><strong>Mailing:</strong> PO Box 1386 Gracie Station, New York, NY 10028</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 New York Hungarian Scientific Society. All rights reserved.</p>
+                <p class="website-credit">Website made by Barnabas Novak</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
