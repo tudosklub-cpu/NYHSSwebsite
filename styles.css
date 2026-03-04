@@ -831,6 +831,10 @@ section {
     letter-spacing: 0.01em;
 }
 
+.footer-section p:has(.footer-subscribe-link) {
+    margin-bottom: 0.4rem;
+}
+
 .footer-subscribe-link:hover {
     color: white;
 }
