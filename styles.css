@@ -3048,257 +3048,414 @@ section {
     margin-right: auto;
 }
 
-/* Responsive Design */
+/* =====================
+   RESPONSIVE DESIGN
+   ===================== */
+
+/* Tablet — 992px */
+@media (max-width: 992px) {
+    .about-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .footer-content {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .contact-single,
+    .contact-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .call-for-abstract-content .container {
+        grid-template-columns: 1fr;
+    }
+
+    .award-sidebar {
+        flex-direction: row;
+    }
+
+    .sidebar-card {
+        flex: 1;
+    }
+
+    .leadership-card.featured {
+        transform: none;
+    }
+
+    .gallery-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+/* Mobile — 768px */
 @media (max-width: 768px) {
+    /* Navigation */
     .mobile-menu-toggle {
         display: flex;
     }
-    
+
     .logo-img {
         height: 45px;
     }
-    
+
     .main-nav {
         position: fixed;
         top: 0;
         right: -100%;
-        width: 80%;
+        width: 85%;
+        max-width: 320px;
         height: 100vh;
         background: white;
-        box-shadow: -5px 0 15px rgba(0,0,0,0.1);
+        box-shadow: -5px 0 15px rgba(0,0,0,0.15);
         transition: right 0.3s ease;
         z-index: 999;
+        overflow-y: auto;
     }
-    
+
     .main-nav.active {
         right: 0;
     }
-    
+
     .nav-list {
         flex-direction: column;
-        padding: 2rem;
-        gap: 1rem;
+        padding: 5rem 2rem 2rem;
+        gap: 0.5rem;
     }
-    
+
+    .nav-link {
+        display: block;
+        padding: 0.75rem 1rem;
+        font-size: 1.1rem;
+    }
+
     .dropdown-menu {
         position: static;
         opacity: 1;
         visibility: visible;
         transform: none;
         box-shadow: none;
-        background: #f8f9fa;
-        margin-top: 0.5rem;
+        background: #f0f4f8;
+        margin-top: 0.25rem;
+        margin-left: 1rem;
         border-radius: 8px;
+        min-width: unset;
     }
-    
+
+    .dropdown-menu li a {
+        padding: 0.5rem 1rem;
+        display: block;
+        font-size: 0.95rem;
+    }
+
+    /* Hero */
     .hero-content h1 {
         font-size: 2rem;
     }
-    
+
     .hero-content p {
         font-size: 1rem;
     }
-    
+
     .hero-buttons {
         flex-direction: column;
         align-items: center;
+        gap: 1rem;
     }
-    
+
     .btn {
-        width: 200px;
+        width: 100%;
+        max-width: 240px;
         text-align: center;
     }
-    
+
+    /* Page headers */
+    .page-header {
+        padding: 3rem 0;
+    }
+
+    .page-header h1 {
+        font-size: 2rem;
+    }
+
+    .page-header p {
+        font-size: 1rem;
+    }
+
+    /* Sections */
+    .section-header h2 {
+        font-size: 1.8rem;
+    }
+
+    .about-grid,
+    .leadership-grid {
+        grid-template-columns: 1fr;
+    }
+
     .events-grid {
         grid-template-columns: 1fr;
     }
-    
+
     .event-card {
         flex-direction: column;
     }
-    
+
     .event-date {
         min-width: auto;
         padding: 1rem;
     }
-    
-    .page-header h1 {
-        font-size: 2rem;
-    }
-    
-    .page-header p {
-        font-size: 1rem;
-    }
-    
+
+    /* Timeline */
     .history-timeline::before {
-        left: 30px;
+        left: 20px;
     }
-    
+
     .timeline-item {
         flex-direction: column !important;
-        padding-left: 60px;
+        padding-left: 50px;
     }
-    
+
     .timeline-item:nth-child(odd) {
         flex-direction: column !important;
     }
-    
+
     .timeline-date {
         flex: none;
         position: absolute;
-        left: -30px;
+        left: -20px;
         top: 0;
         width: auto;
         padding: 0;
+        font-size: 0.8rem;
     }
-    
+
     .timeline-content {
         margin: 0;
     }
-    
+
+    /* Contact */
+    .contact-single,
     .contact-grid {
         grid-template-columns: 1fr;
-        gap: 3rem;
+        gap: 2rem;
     }
-    
+
+    /* People */
     .past-leader-card {
         flex-direction: column;
         gap: 1rem;
     }
-    
+
     .leader-period {
         flex: none;
     }
-}
 
-@media (max-width: 480px) {
-    .container {
-        padding: 0 15px;
+    .officers-grid {
+        grid-template-columns: repeat(2, 1fr);
     }
-    
-    .hero {
-        padding: 4rem 0;
+
+    /* Photos */
+    .gallery-grid {
+        grid-template-columns: repeat(2, 1fr);
     }
-    
-    .section-header h2 {
-        font-size: 2rem;
+
+    /* Lightbox nav buttons */
+    .lightbox-prev {
+        left: 5px;
+        padding: 0.75rem 1rem;
+        font-size: 1.5rem;
     }
-    
-    .about-grid,
-    .leadership-grid {
-        grid-template-columns: 1fr;
+
+    .lightbox-next {
+        right: 5px;
+        padding: 0.75rem 1rem;
+        font-size: 1.5rem;
     }
-    
-    .timeline-content {
+
+    /* Newsletter */
+    .newsletter-section {
+        padding: 3rem 0;
+    }
+
+    #mc_embed_signup {
         padding: 1.5rem;
     }
-    
-    .patrons-grid {
+
+    /* Footer */
+    .footer-content {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    /* Award page */
+    .award-sidebar {
+        flex-direction: column;
+    }
+
+    .award-cta {
+        flex-direction: column;
+    }
+
+    .award-cta .btn {
+        width: 100%;
+        max-width: 300px;
+        text-align: center;
+    }
+
+    /* Videos */
+    .video-item {
         grid-template-columns: 1fr;
     }
-    
-    .officers-grid {
+
+    /* Info cards */
+    .info-cards {
         grid-template-columns: 1fr;
     }
-    
-    .membership-grid {
+}
+
+/* Small phones — 480px */
+@media (max-width: 480px) {
+    .container {
+        padding: 0 1rem;
+    }
+
+    .hero {
+        min-height: 80vh;
+    }
+
+    .hero-content h1 {
+        font-size: 1.7rem;
+    }
+
+    .page-header h1 {
+        font-size: 1.6rem;
+    }
+
+    .section-header h2 {
+        font-size: 1.5rem;
+    }
+
+    /* Grids → single column */
+    .about-grid,
+    .leadership-grid,
+    .patrons-grid,
+    .officers-grid,
+    .membership-grid,
+    .members-grid,
+    .awards-grid,
+    .lectures-list,
+    .past-leadership-grid {
         grid-template-columns: 1fr;
     }
-    
-    /* Responsive for new pages */
-    .members-grid {
-        grid-template-columns: 1fr;
+
+    .gallery-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 0.5rem;
     }
-    
-    .awards-grid {
-        grid-template-columns: 1fr;
+
+    /* Cards */
+    .about-card,
+    .leadership-card,
+    .event-card,
+    .news-card,
+    .membership-card {
+        padding: 1.5rem;
     }
-    
-    .lectures-list {
-        grid-template-columns: 1fr;
+
+    .member-card,
+    .award-card {
+        padding: 1rem;
     }
-    
+
     .bylaws-section {
         padding: 1.5rem;
     }
-    
+
     .bylaws-section h2 {
-        font-size: 1.4rem;
+        font-size: 1.3rem;
     }
-    
+
+    /* Timeline */
+    .timeline-content {
+        padding: 1.25rem;
+    }
+
+    /* Lectures */
     .lectures-cta {
-        padding: 2rem 1.5rem;
+        padding: 2rem 1.25rem;
     }
-    
+
     .lectures-cta .btn {
         display: block;
         margin: 0.5rem auto;
-        width: 200px;
+        width: 100%;
+        max-width: 220px;
     }
-    
+
+    /* Events */
     .event-item {
         flex-direction: column;
     }
-    
+
     .event-item .event-date {
         min-width: auto;
         padding: 1rem;
     }
-}
 
-@media (max-width: 480px) {
-    .container {
-        padding: 0 15px;
-    }
-    
-    .hero {
-        padding: 4rem 0;
-    }
-    
-    .section-header h2 {
-        font-size: 2rem;
-    }
-    
-    .about-grid,
-    .leadership-grid {
-        grid-template-columns: 1fr;
-    }
-    
-    .timeline-content {
-        padding: 1.5rem;
-    }
-    
-    .patrons-grid {
-        grid-template-columns: 1fr;
-    }
-    
-    .officers-grid {
-        grid-template-columns: 1fr;
-    }
-    
-    .membership-grid {
-        grid-template-columns: 1fr;
-    }
-    
-    .member-card {
-        padding: 1rem;
-    }
-    
-    .award-card {
-        padding: 1rem;
-    }
-    
-    .news-card {
-        padding: 1.5rem;
-    }
-    
+    /* Filter buttons */
     .filter-buttons {
         flex-direction: column;
         align-items: center;
     }
-    
+
     .filter-btn {
         width: 100%;
         max-width: 250px;
+    }
+
+    /* Mailchimp */
+    #mc_embed_signup {
+        padding: 1.25rem;
+    }
+
+    #mc_embed_signup h2 {
+        font-size: 1.2rem;
+    }
+
+    /* Lightbox */
+    .lightbox-close {
+        top: 10px;
+        right: 15px;
+        font-size: 2.5rem;
+    }
+
+    /* Award page */
+    .award-announcement {
+        padding: 1.5rem;
+    }
+
+    .sidebar-card {
+        padding: 1.5rem;
+    }
+
+    /* Contact */
+    .contact-item {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    /* Footer */
+    .footer-content {
+        grid-template-columns: 1fr;
+    }
+
+    .footer-bottom {
+        font-size: 0.85rem;
+    }
+
+    /* Nav link — no pseudo-element box on small screens */
+    .nav-link {
+        padding: 0.75rem 0.5rem;
     }
 }
