@@ -813,6 +813,16 @@ section {
     color: #3498db;
 }
 
+.footer-subscribe-link {
+    color: rgba(255,255,255,0.85);
+    text-decoration: underline;
+    transition: color 0.3s ease;
+}
+
+.footer-subscribe-link:hover {
+    color: white;
+}
+
 .footer-bottom {
     text-align: center;
     padding-top: 2rem;
@@ -2567,6 +2577,13 @@ section {
 }
 
 .contact-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    margin-bottom: 4rem;
+}
+
+.contact-single {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 4rem;
