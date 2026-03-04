@@ -1629,28 +1629,50 @@ section {
     line-height: 1.6;
 }
 
-.video-section {
-    margin-bottom: 4rem;
+.video-galleries {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
 }
 
-.video-section-title {
-    font-family: 'Playfair Display', serif;
-    font-size: 2rem;
-    color: var(--scientific-blue);
-    margin-bottom: 0.5rem;
-}
-
-.video-section-description {
-    color: #666;
-    font-size: 1.1rem;
-    margin-bottom: 2rem;
-    line-height: 1.6;
-}
-
-.video-list {
-    display: grid;
-    gap: 2rem;
+.video-gallery {
     margin-bottom: 3rem;
+}
+
+.video-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1.5rem;
+}
+
+.video-embed-item {
+    border-radius: 8px;
+    overflow: hidden;
+    background: #f8f9fa;
+}
+
+.video-embed-item iframe {
+    width: 100%;
+    aspect-ratio: 16/9;
+    display: block;
+}
+
+.video-title {
+    padding: 0.75rem 1rem;
+    font-size: 0.95rem;
+    color: #333;
+    font-weight: 500;
+    margin: 0;
+}
+
+.gallery-caption {
+    margin-bottom: 1.5rem;
+}
+
+.gallery-caption p {
+    color: #666;
+    font-size: 1rem;
+    line-height: 1.6;
 }
 
 .video-item {
