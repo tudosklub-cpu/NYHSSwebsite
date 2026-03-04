@@ -91,7 +91,7 @@ body {
     text-decoration: none;
     color: #333;
     font-weight: 500;
-    transition: all 0.3s ease;
+    transition: color 0.3s ease;
     padding: 0.5rem 1rem;
     border-radius: 8px;
     position: relative;
@@ -109,7 +109,6 @@ body {
     background: linear-gradient(180deg, var(--hungarian-red) 0%, var(--hungarian-red) 33.33%, var(--hungarian-white) 33.33%, var(--hungarian-white) 66.66%, var(--hungarian-green) 66.66%, var(--hungarian-green) 100%);
     z-index: -1;
     opacity: 0;
-    transition: opacity 0.3s ease;
 }
 
 .nav-link::after {
@@ -123,20 +122,20 @@ body {
     border-radius: 8px;
     z-index: -1;
     opacity: 0;
-    transition: opacity 0.3s ease;
 }
 
-.nav-link:hover::before,
 .nav-link.active::before {
     opacity: 1;
 }
 
-.nav-link:hover::after,
 .nav-link.active::after {
     opacity: 1;
 }
 
-.nav-link:hover,
+.nav-link:hover {
+    color: var(--scientific-blue);
+}
+
 .nav-link.active {
     color: var(--scientific-blue);
 }
