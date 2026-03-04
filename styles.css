@@ -1629,9 +1629,28 @@ section {
     line-height: 1.6;
 }
 
+.video-section {
+    margin-bottom: 4rem;
+}
+
+.video-section-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 2rem;
+    color: var(--scientific-blue);
+    margin-bottom: 0.5rem;
+}
+
+.video-section-description {
+    color: #666;
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+    line-height: 1.6;
+}
+
 .video-list {
     display: grid;
     gap: 2rem;
+    margin-bottom: 3rem;
 }
 
 .video-item {
