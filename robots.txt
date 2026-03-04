@@ -3,4 +3,4 @@ User-agent: *
 Allow: /
 
 # Sitemap location
-Sitemap: https://nyhss.org/sitemap.xml
+Sitemap: https://nyhungarianscientificsociety.org/sitemap.xml
