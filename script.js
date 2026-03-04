@@ -87,6 +87,7 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
     
+    
     // Add active class to current page navigation
     const currentPath = window.location.pathname;
     const currentPage = currentPath.split('/').pop() || 'index.html';
