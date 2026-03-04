@@ -2392,6 +2392,14 @@ section {
     transform: scale(1.05);
 }
 
+.leadership-card.featured::after {
+    background: transparent;
+}
+
+.leadership-card.featured::before {
+    display: none;
+}
+
 .leadership-card.featured h3,
 .leadership-card.featured h4,
 .leadership-card.featured .title,
