@@ -823,9 +823,11 @@ section {
 }
 
 .footer-subscribe-link {
-    color: rgba(255,255,255,0.85);
+    color: white;
     text-decoration: underline;
     transition: color 0.3s ease;
+    font-size: 1.1rem;
+    font-weight: 700;
 }
 
 .footer-subscribe-link:hover {
@@ -2492,7 +2494,7 @@ section {
 
 .past-leadership-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 2rem;
 }
 
@@ -2503,10 +2505,24 @@ section {
     box-shadow: 0 5px 20px rgba(0,0,0,0.1);
     display: flex;
     gap: 2rem;
+    overflow: hidden;
+    word-break: break-word;
+}
+
+.leader-info {
+    flex: 1;
+    min-width: 0;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+}
+
+.leader-info a {
+    overflow-wrap: break-word;
+    word-break: break-all;
 }
 
 .leader-period {
-    flex: 0 0 120px;
+    flex: 0 0 100px;
 }
 
 .period {
