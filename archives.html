@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Archives — New York Hungarian Scientific Society</title>
+    <link rel="icon" type="image/png" href="images/NYHSSfavicon.png">
+    <link rel="apple-touch-icon" href="images/NYHSSfavicon.png">
+    <meta property="og:title" content="Archives — New York Hungarian Scientific Society">
+    <meta property="og:description" content="Archived documents and publications from the New York Hungarian Scientific Society.">
+    <meta property="og:image" content="images/NYHSS_logo.png">
+    <meta property="og:type" content="website">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        .archive-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+            gap: 2.5rem;
+            margin-bottom: 3rem;
+        }
+
+        .archive-card {
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .archive-card-header {
+            background: var(--scientific-blue);
+            color: white;
+            padding: 1.5rem;
+        }
+
+        .archive-card-header h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.2rem;
+            margin-bottom: 0.25rem;
+            color: white;
+        }
+
+        .archive-card-header p {
+            font-size: 0.85rem;
+            opacity: 0.8;
+            margin: 0;
+        }
+
+        .archive-pdf-viewer {
+            flex: 1;
+            min-height: 600px;
+        }
+
+        .archive-pdf-viewer iframe {
+            width: 100%;
+            height: 100%;
+            min-height: 600px;
+            border: none;
+            display: block;
+        }
+
+        .archive-pdf-fallback {
+            padding: 2rem;
+            text-align: center;
+            background: #f8f9fa;
+            border-top: 1px solid #eee;
+        }
+
+        .archive-pdf-fallback p {
+            color: #666;
+            margin-bottom: 1rem;
+            font-size: 0.95rem;
+        }
+
+        @media (max-width: 768px) {
+            .archive-grid {
+                grid-template-columns: 1fr;
+            }
+            .archive-pdf-viewer iframe {
+                min-height: 400px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="images/NYHSS_logo_transparent.png" alt="New York Hungarian Scientific Society" class="logo-img">
+                    </a>
+                </div>
+                <nav class="main-nav">
+                    <ul class="nav-list">
+                        <li><a href="index.html" class="nav-link">Home</a></li>
+                        <li class="dropdown">
+                            <a href="#" class="nav-link">About</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="history.html">Our History</a></li>
+                                <li><a href="people.html">People</a></li>
+                                <li><a href="founding-members.html">Founding Members</a></li>
+                                <li><a href="bylaws.html">Bylaws</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="nav-link">Awards</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="awardees.html">Previous Awardees</a></li>
+                                <li><a href="call-for-abstract.html">Call for Abstract</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="nav-link">Events</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="events.html">Upcoming Events</a></li>
+                                <li><a href="lectures.html">Past Lectures</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="news.html" class="nav-link">News</a></li>
+                        <li class="dropdown">
+                            <a href="#" class="nav-link active">Media</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="photos.html">Event Photos</a></li>
+                                <li><a href="videos.html">Videos</a></li>
+                                <li><a href="archives.html" class="active">Archives</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="contact.html" class="nav-link">Contact</a></li>
+                    </ul>
+                </nav>
+                <button class="mobile-menu-toggle" aria-label="Toggle mobile menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main class="main">
+        <section class="page-header">
+            <div class="container">
+                <h1>Archives</h1>
+                <p>Historical documents and publications from the New York Hungarian Scientific Society</p>
+            </div>
+        </section>
+
+        <section class="photos-content">
+            <div class="container">
+                <div class="photos-intro">
+                    <p>Browse our archived documents. You can read each document directly in your browser below.</p>
+                </div>
+
+                <div class="archive-grid">
+                    <div class="archive-card">
+                        <div class="archive-card-header">
+                            <h2>Hungarian Scientists in the US: Yesterday, Today and Tomorrow</h2>
+                            <p>NYHSS Publication</p>
+                        </div>
+                        <div class="archive-pdf-viewer">
+                            <iframe src="archives/HUNGARIANSCIENTISTSINTHEUSYESTERDAYTODAYANDTOMORROW.pdf" title="Hungarian Scientists in the US: Yesterday, Today and Tomorrow"></iframe>
+                        </div>
+                        <div class="archive-pdf-fallback">
+                            <p>If the document does not display, you can open it directly:</p>
+                            <a href="archives/HUNGARIANSCIENTISTSINTHEUSYESTERDAYTODAYANDTOMORROW.pdf" class="btn btn-primary" target="_blank">Open PDF</a>
+                        </div>
+                    </div>
+
+                    <div class="archive-card">
+                        <div class="archive-card-header">
+                            <h2>Szentágothai Memorial</h2>
+                            <p>2012</p>
+                        </div>
+                        <div class="archive-pdf-viewer">
+                            <iframe src="archives/Szentagothai memorial_2012.pdf" title="Szentágothai Memorial 2012"></iframe>
+                        </div>
+                        <div class="archive-pdf-fallback">
+                            <p>If the document does not display, you can open it directly:</p>
+                            <a href="archives/Szentagothai memorial_2012.pdf" class="btn btn-primary" target="_blank">Open PDF</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>New York Hungarian Scientific Society</h3>
+                    <p>Providing a venue for Hungarian scholars, scientists and students to promote science and culture in the NYC area.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="history.html">Our History</a></li>
+                        <li><a href="people.html">People</a></li>
+                        <li><a href="events.html">Events</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <p><a href="contact.html#subscribe" class="footer-subscribe-link">Subscribe to our mailing list</a></p>
+                    <p><strong>Address:</strong> 227 East 52nd Street, New York, N.Y. 10022</p>
+                    <p><strong>Mailing:</strong> PO Box 1386 Gracie Station, New York, NY 10028</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 New York Hungarian Scientific Society. All rights reserved.</p>
+                <p class="website-credit">Website made by Barnabas Novak</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
