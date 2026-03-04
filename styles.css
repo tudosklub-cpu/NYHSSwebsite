@@ -2387,12 +2387,22 @@ section {
 .leadership-card.featured h4,
 .leadership-card.featured .title,
 .leadership-card.featured .organization,
-.leadership-card.featured .address {
+.leadership-card.featured .address,
+.leadership-card.featured .name,
+.leadership-card.featured .email,
+.leadership-card.featured p {
     color: white;
 }
 
-.leadership-card.featured .contact a {
-    color: #ecf0f1;
+.leadership-card.featured .contact a,
+.leadership-card.featured .website a {
+    color: white;
+    text-decoration: underline;
+}
+
+.leadership-card.featured .contact strong,
+.leadership-card.featured .website strong {
+    color: white;
 }
 
 .leadership-header {
