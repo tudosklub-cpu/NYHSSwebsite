@@ -521,7 +521,7 @@ section {
 /* Events Preview */
 .events-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 2rem;
     margin-bottom: 3rem;
 }
@@ -530,7 +530,7 @@ section {
     background: white;
     border-radius: 12px;
     box-shadow: 0 5px 20px rgba(0,0,0,0.1);
-    overflow: hidden;
+    overflow: visible;
     display: flex;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     position: relative;
@@ -606,21 +606,25 @@ section {
     flex: 1;
     min-width: 0;
     overflow: hidden;
-}
-
-.event-content h3 {
-    font-family: 'Playfair Display', serif;
-    font-size: 1.3rem;
-    color: #2c3e50;
-    margin-bottom: 0.5rem;
     word-wrap: break-word;
     overflow-wrap: break-word;
 }
 
+.event-content h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.1rem;
+    color: #2c3e50;
+    margin-bottom: 0.5rem;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    line-height: 1.3;
+}
+
 .event-content p {
     color: #666;
-    margin-bottom: 1rem;
-    line-height: 1.5;
+    margin-bottom: 0.75rem;
+    line-height: 1.4;
+    font-size: 0.9rem;
 }
 
 .event-link {
@@ -3256,15 +3260,31 @@ section {
 
     .events-grid {
         grid-template-columns: 1fr;
+        gap: 1.5rem;
     }
 
     .event-card {
         flex-direction: column;
+        max-width: 100%;
     }
 
     .event-date {
         min-width: auto;
         padding: 1rem;
+        flex-direction: row;
+        gap: 0.5rem;
+    }
+
+    .event-content {
+        padding: 1rem;
+    }
+
+    .event-content h3 {
+        font-size: 1rem;
+    }
+
+    .event-content p {
+        font-size: 0.85rem;
     }
 
     /* Timeline */
@@ -3978,13 +3998,14 @@ section {
     display: inline-block;
     background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
     color: white;
-    padding: 0.2rem 0.6rem;
-    border-radius: 4px;
-    font-size: 0.75rem;
+    padding: 0.15rem 0.5rem;
+    border-radius: 3px;
+    font-size: 0.65rem;
     font-weight: 500;
     text-transform: uppercase;
-    letter-spacing: 0.5px;
+    letter-spacing: 0.3px;
     margin-bottom: 0.25rem;
+    white-space: nowrap;
 }
 
 /* Event Timeline Styles */
@@ -4039,20 +4060,6 @@ section {
 /* Featured Event Card on Homepage */
 .event-card.featured {
     border: 2px solid var(--scientific-blue);
-    position: relative;
-}
-
-.event-card.featured::before {
-    content: 'UPCOMING';
-    position: absolute;
-    top: -10px;
-    right: 15px;
-    background: var(--scientific-blue);
-    color: white;
-    padding: 0.25rem 0.75rem;
-    border-radius: 4px;
-    font-size: 0.7rem;
-    font-weight: 600;
 }
 
 /* Admin Responsive */
