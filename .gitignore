@@ -1,0 +1,24 @@
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+
+# Dependencies
+node_modules/
+
+# Build
+dist/
+build/
+
+# Deployment
+windsurf_deployment.yaml
+
+# Logs
+*.log
+
+# Local env
+.env
+.env.local
