@@ -530,10 +530,11 @@ section {
     background: white;
     border-radius: 12px;
     box-shadow: 0 5px 20px rgba(0,0,0,0.1);
-    overflow: visible;
+    overflow: hidden;
     display: flex;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     position: relative;
+    max-width: 100%;
 }
 
 .event-card::before {
@@ -603,6 +604,8 @@ section {
 .event-content {
     padding: 1.5rem;
     flex: 1;
+    min-width: 0;
+    overflow: hidden;
 }
 
 .event-content h3 {
@@ -610,6 +613,8 @@ section {
     font-size: 1.3rem;
     color: #2c3e50;
     margin-bottom: 0.5rem;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
 }
 
 .event-content p {
