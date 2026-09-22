@@ -115,7 +115,7 @@
                         <div class="event-content">
                             <span class="event-series-tag">Society Meeting</span>
                             <h3>Hungarian Science and the Arts</h3>
-                            <a href="eventimages/2026-10/Hungarianscieneandthearts.png" target="_blank"><img src="eventimages/2026-10/Hungarianscieneandthearts.png" alt="October 2026 event poster" class="event-poster"></a>
+                            <img src="eventimages/2026-10/Hungarianscieneandthearts.png" alt="October 2026 event poster" class="event-poster">
                             <p class="event-time">6:00 PM</p>
                             <p class="event-location">📍 Consulate General of Hungary, 227 East 52nd Street, New York, NY 10022</p>
                             <div class="event-description">
@@ -139,7 +139,7 @@
                         <div class="event-content">
                             <span class="event-series-tag">Society Meeting</span>
                             <h3>Law Across Two Countries</h3>
-                            <a href="eventimages/2026-11/lawacrosstwocountries.png" target="_blank"><img src="eventimages/2026-11/lawacrosstwocountries.png" alt="November 2026 event poster" class="event-poster"></a>
+                            <img src="eventimages/2026-11/lawacrosstwocountries.png" alt="November 2026 event poster" class="event-poster">
                             <p class="event-time">6:00 PM</p>
                             <p class="event-location">📍 Consulate General of Hungary, 227 East 52nd Street, New York, NY 10022</p>
                             <div class="event-description">
@@ -410,6 +410,11 @@
         </div>
     </footer>
 
+    <div class="lightbox" id="poster-lightbox">
+        <span class="lightbox-close">&times;</span>
+        <img class="lightbox-content" id="lightbox-img" alt="Event poster">
+    </div>
+
     <script src="script.js"></script>
     <script>
         // Event filtering functionality
@@ -438,6 +443,20 @@
                         }
                     });
                 });
+            });
+
+            // Poster lightbox
+            const lightbox = document.getElementById('poster-lightbox');
+            const lightboxImg = document.getElementById('lightbox-img');
+            document.querySelectorAll('.event-poster').forEach(function(img) {
+                img.addEventListener('click', function() {
+                    lightboxImg.src = this.src;
+                    lightboxImg.alt = this.alt;
+                    lightbox.classList.add('active');
+                });
+            });
+            lightbox.addEventListener('click', function() {
+                lightbox.classList.remove('active');
             });
         });
     </script>
