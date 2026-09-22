@@ -4135,6 +4135,34 @@ section {
     flex-wrap: wrap;
 }
 
+/* Event body: text left, poster right */
+.event-body {
+    display: flex;
+    gap: 2rem;
+    align-items: flex-start;
+}
+
+.event-text {
+    flex: 1;
+    min-width: 0;
+}
+
+.event-body .event-poster {
+    flex-shrink: 0;
+    margin-bottom: 0;
+}
+
+@media (max-width: 768px) {
+    .event-body {
+        flex-direction: column-reverse;
+    }
+
+    .event-body .event-poster {
+        max-width: 100%;
+        margin-bottom: 1rem;
+    }
+}
+
 /* Event poster image */
 .event-poster {
     max-width: 280px;
